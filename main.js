@@ -8,10 +8,10 @@ function addItems(num, tag, text) {
   }
 };
 
-function clickToConsole(tag, elementNum) {
+function actionToConsole(tag, elementNum, action) {
   var element = document.getElementsByTagName(tag)
   if (element[elementNum]) {
-    element[elementNum].addEventListener("click", function() {
+    element[elementNum].addEventListener(action, function() {
       console.log(element[elementNum].innerText)
     })
   }
