@@ -7,7 +7,6 @@ function addItems(num, tag, text) {
     };
   }
 };
-
 function actionToConsole(tag, elementNum, action) {
   var element = document.getElementsByTagName(tag)
   if (element[elementNum]) {
@@ -20,12 +19,11 @@ function actionToConsole(tag, elementNum, action) {
 function changeText(tag, elementNum, text) {
   var element = document.getElementsByTagName(tag)
   if (element[elementNum]) {
-
     element[elementNum].innerHTML = text;
   }}
 
-  function changeColor(tag, elementNum, color) {
+  function changeColor(tag, elementNum, value, attribute) {
     var element = document.getElementsByTagName(tag)
     if (element[elementNum]) {
-      element[elementNum].style.backgroundColor = color;
+      element[elementNum].style[attribute] = value;
     }}
